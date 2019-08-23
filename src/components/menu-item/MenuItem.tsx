@@ -1,14 +1,15 @@
 import React from 'react';
 import './menu-item.scss';
-
-interface IProps {
+import { withRouter, RouteComponentProps } from 'react-router-dom';
+type IProps = RouteComponentProps<any> & {
 	title: string;
 	imageUrl: string;
 	size?: string;
-}
+	linkUrl: string;
+};
 
-const MenuItem: React.FC<IProps> = ({ title, imageUrl, size }) => (
-	<div className={`${size} menu-item`}>
+const MenuItem: React.FC<IProps> = ({ title, imageUrl, size, history, match, linkUrl }) => (
+	<div className={`${size} menu-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
 		<div
 			className="background-image"
 			style={{
@@ -22,4 +23,4 @@ const MenuItem: React.FC<IProps> = ({ title, imageUrl, size }) => (
 	</div>
 );
 
-export default MenuItem;
+export default withRouter(MenuItem);

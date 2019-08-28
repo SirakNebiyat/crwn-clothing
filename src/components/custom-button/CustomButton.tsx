@@ -3,7 +3,8 @@ import './custombutton.scss';
 type Props = {
 	children: React.ReactNode;
 	onClick?: any;
-	isGoogleSignIn: boolean;
+	isGoogleSignIn?: boolean;
+	type: 'submit' | 'reset' | 'button';
 };
 
 const CustomButton: React.FC<Props> = ({ children, isGoogleSignIn, ...otherProps }) => (

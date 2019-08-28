@@ -54,8 +54,10 @@ export default class SignIn extends Component<any, State> {
 					/>
 
 					<div className="buttons">
-						<CustomButton isGoogleSignIn={false}>Sign in</CustomButton>
-						<CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+						<CustomButton type="button" isGoogleSignIn={false}>
+							Sign in
+						</CustomButton>
+						<CustomButton type="button" onClick={signInWithGoogle} isGoogleSignIn>
 							Sign in with google
 						</CustomButton>
 					</div>

@@ -3,6 +3,7 @@ export type Item = {
 	name: string;
 	imageUrl: string;
 	price: number;
+	quantity?: number;
 };
 export type Collections = {
 	id: number;

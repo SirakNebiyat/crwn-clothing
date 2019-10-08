@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SHOP_DATA } from './mock-data.js';
+import SHOP_DATA from './mock-data.js';
 import Collection from '../../components/preview-collection/Collection';
 
 export default class ShopPage extends Component {

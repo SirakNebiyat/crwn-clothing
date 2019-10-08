@@ -14,7 +14,7 @@ class App extends React.Component<any> {
 	unsubscribeFromAuth: any = null;
 
 	componentDidMount () {
-		console.log(this.props);
+		console.log('THIS PROPS', this.props);
 		const { setCurrentUser } = this.props;
 		this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
 			if (userAuth) {
@@ -54,8 +54,8 @@ class App extends React.Component<any> {
 	}
 }
 
-const mapStateToProps = (user: any) => ({
-	currentUser: user.user
+const mapStateToProps = ({ user }: { user: any }) => ({
+	currentUser: user.currentUser
 });
 
 const mapDispatchToProps = (dispatch: any) => ({

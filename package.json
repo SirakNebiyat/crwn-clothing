@@ -13,6 +13,7 @@
     "react-scripts": "3.1.1",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
+    "reselect": "^4.0.0",
     "typescript": "3.5.3"
   },
   "scripts": {
@@ -37,12 +38,11 @@
     ]
   },
   "devDependencies": {
-    "@types/redux-logger": "^3.0.7",
-    "@types/react": "16.9.1",
-
     "@types/node": "12.7.5",
+    "@types/react": "16.9.1",
     "@types/react-dom": "16.8.5",
     "@types/react-redux": "^7.1.2",
-    "@types/react-router-dom": "^4.3.5"
+    "@types/react-router-dom": "^4.3.5",
+    "@types/redux-logger": "^3.0.7"
   }
 }

@@ -26,6 +26,7 @@ const CheckoutPage: React.FC<any> = ({ cartItems, total }) => (
 				<span>Remove</span>
 			</div>
 		</div>
+		{console.log('CHECKOUTPAGE:', cartItems)}
 		{cartItems.map((cartItem: Item) => <CheckoutItem key={cartItem.id} cartItem={cartItem} />)}
 		<div className="total">
 			<span>TOTAL: ${total}</span>
